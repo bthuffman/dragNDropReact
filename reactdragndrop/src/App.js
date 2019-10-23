@@ -6,49 +6,14 @@ function App() {
   return (
     <div className="App">
       <main className="flexbox">
-        <BoardTile id="boardTile-1" className="boardTile">
+        <BoardTile id="board-1" className="board">
           <Card id="card-1" className="card" draggable="true">
             <p>Card One</p>
           </Card>
         </BoardTile>
-        <BoardTile id="boardTile-2" className="boardTile">
+        <BoardTile id="board-2" className="board">
           <Card id="card-2" className="card" draggable="true">
             <p>Card Two</p>
-          </Card>
-        </BoardTile>
-        <BoardTile id="boardTile-3" className="boardTile">
-          {/* <Card id="card-3" className="card" draggable="true">
-            <p>Card Three</p>
-          </Card> */}
-        </BoardTile>
-        <BoardTile id="boardTile-4" className="boardTile">
-          <Card id="card-4" className="card" draggable="true">
-            <p>Card Four</p>
-          </Card>
-        </BoardTile>
-        <BoardTile id="boardTile-5" className="boardTile">
-          <Card id="card-5" className="card" draggable="true">
-            <p>Card Five</p>
-          </Card>
-        </BoardTile>
-        <BoardTile id="boardTile-6" className="boardTile">
-          <Card id="card-6" className="card" draggable="true">
-            <p>Card Six</p>
-          </Card>
-        </BoardTile>
-        <BoardTile id="boardTile-7" className="boardTile">
-          <Card id="card-7" className="card" draggable="true">
-            <p>Card Seven</p>
-          </Card>
-        </BoardTile>
-        <BoardTile id="boardTile-8" className="boardTile">
-          <Card id="card-8" className="card" draggable="true">
-            <p>Card Eight</p>
-          </Card>
-        </BoardTile>
-        <BoardTile id="boardTile-9" className="boardTile">
-          <Card id="card-9" className="card" draggable="true">
-            <p>Card Nine</p>
           </Card>
         </BoardTile>
       </main>
