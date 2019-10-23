@@ -9,10 +9,6 @@ body {
 }
 
 .board {
-    width: 300px;
-}
-
-.flexbox {
     display: flex;
     justify-content: start;
 
@@ -29,7 +25,7 @@ body {
     /* padding: 15px; */
 }
 
-.flexbox .boardTile {
+.board .boardTile {
     display: flex;
     flex-direction: column;
 
@@ -45,7 +41,7 @@ body {
     /* padding: 15px; */
 }
 
-.flexbox .boardTile .card {
+.board .boardTile .card {
     width: 100px;
     height: 100px;
     background-color: beige;
