@@ -23,7 +23,7 @@
     grid-row-start: 1;
     grid-row-end: 2;
     justify-self: end;
-    /* background-color: blue; */
+    background-size: 100%;
   }
 
   .rightTri {
@@ -33,22 +33,20 @@
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
-    /* background-color: yellow; */
+    background-size: 100%;
   }
 
   .leftTri {
     height: 100px;
     width: 100px;
     justify-self: end;
-    /* background-color: green; */
-
+    background-size: 100%;
   }
 
   .bottomTri {
     height: 100px;
     width: 100px;
-    /* background-color: red; */
-
+    background-size: 100%;
   }
   
   .overlayDiv {
