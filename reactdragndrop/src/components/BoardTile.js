@@ -1,7 +1,8 @@
 import React from 'react'
 
-function BoardTile(props) {
-    const drop = e => {
+class BoardTile extends React.Component {
+
+    drop = e => {
         e.preventDefault();
         // Transfer the id between this event, get the element by id
         // and append it to the boardTile
@@ -14,21 +15,26 @@ function BoardTile(props) {
     }
 
     // Allows you to continue with function of dropping.
-    const dragOver = e => {
+    dragOver = e => {
         e.preventDefault();
     }
-    return (
-        <div
-            id={props.id}
-            // called when we drop over the boardTile
-            className={props.className}
-            onDrop={drop}
-            // called when call one of cards over the baord. 
-            onDragOver={dragOver}
-        >
-            { props.children }
-        </div>
-    )
+
+    render() {
+        return (
+            <div
+                id={this.props.id}
+                col={this.props.col}
+                row={this.props.row}
+                // called when we drop over the boardTile
+                className={this.props.className}
+                onDrop={this.drop}
+                // called when call one of cards over the baord. 
+                onDragOver={this.dragOver}
+            >
+                {this.props.children}
+            </div>
+        )
+    }
 }
 
 export default BoardTile;
