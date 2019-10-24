@@ -5,12 +5,12 @@ class BoardTile extends React.Component {
         e.preventDefault();
         // Transfer the id between this event, get the element by id
         // and append it to the boardTile
-        const card_id = e.dataTransfer.getData('card_id');
+        const lakeTile_id = e.dataTransfer.getData('lakeTile_id');
 
-        const card = document.getElementById(card_id);
-        card.style.display = 'block';
+        const lakeTile = document.getElementById(lakeTile_id);
+        lakeTile.style.display = 'block';
 
-        e.target.appendChild(card);
+        e.target.appendChild(lakeTile);
     }
 
     // Allows you to continue with function of dropping.
@@ -27,7 +27,7 @@ class BoardTile extends React.Component {
                 // called when we drop over the boardTile
                 className={this.props.className}
                 onDrop={this.drop}
-                // called when call one of cards over the baord. 
+                // called when call one of lakeTiles over the baord. 
                 onDragOver={this.dragOver}
             >
                 {this.props.children}

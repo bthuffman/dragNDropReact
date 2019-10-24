@@ -1,13 +1,14 @@
-import React from 'react'
-import './LakeTile.css'
-import blackTile from "./blackTile.jpg"
-import blueTile from "./blueTile.jpg"
-import greenTile from "./greenTile.jpg"
-import orangeTile from "./orangeTile.jpg"
-import purpleTile from "./purpleTile.jpg"
-import redTile from "./redTile.jpg"
-import whiteTile from "./whiteTile.jpg"
-class Card extends React.Component {
+import React from 'react';
+import './LakeTile.css';
+import blackTile from "./blackTile.jpg";
+import blueTile from "./blueTile.jpg";
+import greenTile from "./greenTile.jpg";
+import orangeTile from "./orangeTile.jpg";
+import purpleTile from "./purpleTile.jpg";
+import redTile from "./redTile.jpg";
+import whiteTile from "./whiteTile.jpg";
+
+class LakeTile extends React.Component {
    constructor(props) {
        super(props)
        this.state = {
@@ -54,7 +55,7 @@ class Card extends React.Component {
    }
    dragStart = e => {
        const target = e.target;
-       e.dataTransfer.setData('card_id', target.id);
+       e.dataTransfer.setData('lakeTile_id', target.id);
        // Allows it to be visible when we drag it.
        setTimeout(() => {
            target.style.display = "none";
@@ -70,8 +71,6 @@ class Card extends React.Component {
        const left = this.getLanternImage(this.state.colors[3])
        return (
            <div
-           // id={this.props.id}
-           // className={this.props.className}
            > {this.props.children}
                <div
                    id={this.props.id}
@@ -96,4 +95,4 @@ class Card extends React.Component {
        )
    }
 }
-export default Card
+export default LakeTile
