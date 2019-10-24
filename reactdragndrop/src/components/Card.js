@@ -58,7 +58,7 @@ class Card extends React.Component {
 
         return image
     }
-    
+
     dragStart = e => {
         const target = e.target;
 
@@ -81,30 +81,35 @@ class Card extends React.Component {
 
         return (
             <div
-                id={this.props.id}
-                className={this.props.className}
-                draggable={this.props.draggable}
-                onDragStart={this.dragStart}
-                onDragOver={this.dragOver}
-            >
-                {/* {this.props.children} */}
-                <div className="parentContainer" >
-                <div className="parent"
-                    onClick={this.rotate}>
-                    <div className="topTri">
-                        <img src={top} alt="top lanterns"/>
-                    </div>
-                    <div className="rightTri">
-                        <img src={right} alt="right lanterns"/>
-                    </div>
-                    <div className="leftTri">
-                        <img src={left} alt="left lanterns"/>
-                    </div>
-                    <div className="bottomTri">
-                        <img src={bottom} alt="bottom lanterns"/>
+            // id={this.props.id}
+            // className={this.props.className}
+
+            > {this.props.children}
+                <div
+                    id={this.props.id}
+                    className="parentContainer"
+                    draggable={this.props.draggable}
+                    onDragStart={this.dragStart}
+                    onDragOver={this.dragOver}
+                >
+                    <div className="parent"
+                        onClick={this.rotate}>
+                       
+
+                    <div className="topTri" style={{ backgroundImage: top}}>
+                            {/* <img src={top} alt="top lanterns" /> */}
+                        </div>
+                        <div className="rightTri">
+                            <img src={right} alt="right lanterns" />
+                        </div>
+                        <div className="leftTri">
+                            <img src={left} alt="left lanterns" />
+                        </div>
+                        <div className="bottomTri">
+                            <img src={bottom} alt="bottom lanterns" />
+                        </div>
                     </div>
                 </div>
-            </div>
             </div>
         )
     }

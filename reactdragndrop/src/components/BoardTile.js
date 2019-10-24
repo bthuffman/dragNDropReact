@@ -1,7 +1,6 @@
 import React from 'react'
 
 class BoardTile extends React.Component {
-
     drop = e => {
         e.preventDefault();
         // Transfer the id between this event, get the element by id
